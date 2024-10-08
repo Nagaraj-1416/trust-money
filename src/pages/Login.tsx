@@ -65,7 +65,7 @@ function Login() {
                                 src={check_full}
                                 style={{
                                   height: '20px',
-                                  width: '20px'
+                                  width: '10px' 
                                 }}
                               />
                               <span className="ml-1 font14 sucess-text inherit">
