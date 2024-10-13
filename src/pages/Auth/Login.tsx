@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import trustLogo from '../assets/trsut-group-logo.svg'; 
-import login_bond_icon from '../assets/login-bond-icon-1.svg'; 
-import eye_icon from '../assets/eye-open.svg'; 
-import eye_strike_icon from '../assets/eye-open-close.svg'; 
-import check_full from '../assets/check-full.svg'; 
-import call_icon from '../assets/call-icon-brand.svg'; 
-import email_icon from '../assets/email-icon-brand.svg'; 
+import trustLogo from '@assets/trsut-group-logo.svg'; 
+import login_bond_icon from '@assets/login-bond-icon-1.svg'; 
+import eye_icon from '@assets/eye-open.svg'; 
+import eye_strike_icon from '@assets/eye-open-close.svg'; 
+import check_full from '@assets/check-full.svg'; 
+import call_icon from '@assets/call-icon-brand.svg'; 
+import email_icon from '@assets/email-icon-brand.svg'; 
 import { TextField } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Login() {
   const [panNumber, setPanNumber] = useState('');
@@ -61,13 +62,7 @@ function Login() {
                           </h4>
                           <ul className="mt-2">
                             <li className="flex-wrap flex-center mb-1">
-                              <img
-                                src={check_full}
-                                style={{
-                                  height: '20px',
-                                  width: '10px' 
-                                }}
-                              />
+                              <img src={check_full} style={{height: '20px',width: '20px'}}/>
                               <span className="ml-1 font14 sucess-text inherit">
                                 Fair and Competitive Pricing.
                               </span>
@@ -167,13 +162,13 @@ function Login() {
                                 </div>
                               </div>
                               <div className="form-input">
-                                <a
+                                <Link
                                   className="btn btn-primary d-block"
-                                  href="/login"
+                                  to="/dashboard"
                                   id="loginBtn"
                                 >
                                   LOGIN
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </form>

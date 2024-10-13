@@ -1,36 +1,26 @@
-import location_icon from '../assets/location-icon.svg'; 
-import email_icon from '../assets/email-icon.svg'; 
-import call_icon from '../assets/call-icon.svg'; 
-import trust_logo from '../assets/trust-logo.jpg'; 
-import search_icon from '../assets/search-icon.svg'; 
-import document_icon from '../assets/documents-icon.svg'; 
-import choose_icon from '../assets/choose-icon.svg'; 
-import wallet_icon from '../assets/wallet-icon.svg'; 
-import default_icon from '../assets/default-icon.jpg'; 
-import nine_dots_icon from '../assets/nine-dots-icon.svg'; 
-import award_icon from '../assets/award-icon.svg'; 
-import award_small_icon from '../assets/award-small-icon.svg'; 
-import about_user_icon from '../assets/about-user-icon.svg'; 
-import about_expirence_icon from '../assets/about-experience-icon.svg'; 
-import about_award_icon from '../assets/about-award-icon.svg'; 
-import trust_footer_logo from '../assets/trust-securities-footer-logo.svg'; 
-import linked_in_logo from '../assets/linkedin.svg'; 
-import twitter_logo from '../assets/twitter.svg'; 
-import facebook_logo from '../assets/facebook.svg'; 
-import why_image_1 from '../assets/why-1.jpg'; 
-import why_image_2 from '../assets/why-2.jpg'; 
-import why_image_3 from '../assets/why-3.jpg'; 
-import why_image_4 from '../assets/why-4.jpg'; 
-import why_image_5 from '../assets/why-5.jpg'; 
-import why_image_6 from '../assets/why-6.jpg';  
-import update_1 from '../assets/update-1.jpg';  
-import update_2 from '../assets/update-2.jpg';  
-import update_3 from '../assets/update-3.jpg';  
+import search_icon from '@assets/search-icon.svg'; 
+import document_icon from '@assets/documents-icon.svg'; 
+import choose_icon from '@assets/choose-icon.svg'; 
+import wallet_icon from '@assets/wallet-icon.svg'; 
+import default_icon from '@assets/default-icon.jpg'; 
+import nine_dots_icon from '@assets/nine-dots-icon.svg'; 
+import award_icon from '@assets/award-icon.svg'; 
+import award_small_icon from '@assets/award-small-icon.svg'; 
+import about_user_icon from '@assets/about-user-icon.svg'; 
+import about_expirence_icon from '@assets/about-experience-icon.svg'; 
+import about_award_icon from '@assets/about-award-icon.svg'; 
+import why_image_1 from '@assets/why-1.jpg'; 
+import why_image_2 from '@assets/why-2.jpg'; 
+import why_image_3 from '@assets/why-3.jpg'; 
+import why_image_4 from '@assets/why-4.jpg'; 
+import why_image_5 from '@assets/why-5.jpg'; 
+import why_image_6 from '@assets/why-6.jpg';  
+import update_1 from '@assets/update-1.jpg';  
+import update_2 from '@assets/update-2.jpg';  
+import update_3 from '@assets/update-3.jpg';  
 import Carousel from 'react-multi-carousel';
-import whatsapp_icon from '../assets/whatsApp.svg'; 
-import up_arrow_icon from '../assets/up-arrow-icon.svg'; 
-// import profile_icon from '../assets/profile.svg'; 
-// import banner_image from '../assets/ad-1.jpg'; 
+// import profile_icon from '@assets/profile.svg'; 
+// import banner_image from '@assets/ad-1.jpg'; 
 
 const LandingPage = () => {
 
@@ -72,117 +62,7 @@ const LandingPage = () => {
   };
   return (
     <>
-      <section className="top-header">
-            <div className="container">
-    <div className="row">
-      <div className="col-lg-12">
-        <div className="flex-wrap flex-center">
-          <ul className="top-nav flex-wrap">
-            <li>
-              <a href="">
-                Downloads
-              </a>
-            </li>
-            <li>
-              <a href="">
-                FAQs
-              </a>
-            </li>
-            <li>
-              <a href="">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Contact Us
-              </a>
-            </li>
-          </ul>
-          <ul className="top-nav flex-wrap ml-auto text-right">
-            <li className="border-r">
-              <img src={location_icon}/>
-              <span>
-                Mumbai (Corporate Office)
-              </span>
-            </li>
-            <li>
-              <img src={email_icon} />
-              <span>
-                <a href="mailto:info@trustgroup.in">
-                  info@trustgroup.in
-                </a>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-            </div>
-      </section>
-      <section className="main-header">
-        <div className="container">
-    <div className="row">
-      <div className="col-lg-12">
-        <div className="flex-wrap flex-center">
-          <div className="brand">
-            <a href="">
-              <img
-                alt="Trust Securities"
-                className="img-fluid"
-                height="63"
-                src={trust_logo}
-                width="117"
-              />
-            </a>
-          </div>
-          <div className="toggleMenu hidden-xs ml-auto">
-            <span />
-            <span />
-            <span />
-          </div>
-          <ul className="ml-auto main-nav flex-wrap flex-center">
-            <li>
-              <a href="">
-                Explore all bonds
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Primary Bonds
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-              >
-                Our Offerings
-              </a>
-            </li>
-            <li className="btn-dist">
-                <a
-                  className="btn btn-border border-gradient"
-                  href="/login"
-                >
-                  Login
-                </a>
-              </li>
-              <li>
-                <a
-                  className="btn btn-primary"
-                  href="/register"
-                >
-                  Sign up
-                </a>
-              </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-        </div>
-      </section>
-
-      <div className="info-sticky" id="marketinfo" >
+            <div className="info-sticky" id="marketinfo" >
           <div className="container-fluid">
     <div className="row">
       <div className="col-lg-12 p-0">
@@ -283,9 +163,9 @@ const LandingPage = () => {
       </div>
     </div>
           </div>
-       </div>
+            </div>
 
-       <section className="animate-box" id="search_section" >
+            <section className="animate-box" id="search_section" >
   <div className="container">
     <div className="row">
       <div className="col-lg-12">
@@ -330,9 +210,9 @@ const LandingPage = () => {
       </div>
     </div>
   </div>
-       </section>
+            </section>
 
-       <section className="steps-section pb-2 bg-white animate-box" id="steps_section" >
+            <section className="steps-section pb-2 bg-white animate-box" id="steps_section" >
           <div className="container">
     <div className="row">
       <div className="col-lg-12">
@@ -404,9 +284,9 @@ const LandingPage = () => {
       </div>
     </div>
           </div>
-       </section>
+            </section>
 
-       <section className="invest-bond pb-2 animate-box" id="invest_section">
+            <section className="invest-bond pb-2 animate-box" id="invest_section">
            <div className="container">
     <div className="row">
       <div className="col-lg-12">
@@ -438,7 +318,7 @@ const LandingPage = () => {
         itemClass="carousel-item-padding-40-px"
       >
         {/* Static Bond Card 1 */}
-        <div className="bonds-card">
+        <div className="bonds-card me-1">
           <div className="brand-blur" style={{ backgroundImage: `url('images/brands/default-icon2.jpg')` }} />
           <div className="p-15 p-relative b-title">
             <div className="flex-wrap flex-center">
@@ -488,7 +368,7 @@ const LandingPage = () => {
         </div>
         
         {/* Static Bond Card 2 */}
-        <div className="bonds-card">
+        <div className="bonds-card me-1">
           <div className="brand-blur" style={{ backgroundImage: `url('images/brands/default-icon2.jpg')` }} />
           <div className="p-15 p-relative b-title">
             <div className="flex-wrap flex-center">
@@ -538,7 +418,7 @@ const LandingPage = () => {
         </div>
 
         {/* Static Bond Card 3 */}
-        <div className="bonds-card">
+        <div className="bonds-card me-1">
           <div className="brand-blur" style={{ backgroundImage: `url('images/brands/default-icon2.jpg')` }} />
           <div className="p-15 p-relative b-title">
             <div className="flex-wrap flex-center">
@@ -588,7 +468,7 @@ const LandingPage = () => {
         </div>
 
         {/* Static Bond Card 4 */}
-        <div className="bonds-card">
+        <div className="bonds-card me-1">
           <div className="brand-blur" style={{ backgroundImage: `url('images/brands/default-icon2.jpg')` }} />
           <div className="p-15 p-relative b-title">
             <div className="flex-wrap flex-center">
@@ -657,15 +537,15 @@ const LandingPage = () => {
       </div>
     </div>
            </div>
-        </section>
+             </section>
 
-        <section className="why-invest bg-white pb-2 animate-box" id="why_section">
+             <section className="why-invest bg-white pb-2 animate-box" id="why_section">
              <div className="container">
                <div className="row">
       <div className="col-lg-12">
         <div className="heading-box">
           <div className="text-center">
-            <h2 className="title fade">
+            <h2 className="title">
               Why Invest in{' '}
               <span>
                 Bonds
@@ -818,9 +698,9 @@ const LandingPage = () => {
                  </div>
                </div>
              </div>
-        </section>
+             </section>
 
-        <section className="about-section pb-2 counter-box animate-box" id="about_section">
+             <section className="about-section pb-2 counter-box animate-box" id="about_section">
   <div className="container">
     <div className="row">
       <div className="col-lg-12">
@@ -918,9 +798,9 @@ const LandingPage = () => {
       </div>
     </div>
   </div>
-         </section>
+              </section>
 
-         <section  className="why-invest bg-white pb-2 animate-box"  id="update_section">
+              <section  className="why-invest bg-white pb-2 animate-box"  id="update_section">
            <div className="container">
     <div className="row">
       <div className="col-lg-12">
@@ -1030,9 +910,9 @@ const LandingPage = () => {
       </div>
     </div>
            </div>
-         </section>
+              </section>
 
-        <section  className="award-section pb-2 animate-box" id="award_section">
+             <section  className="award-section pb-2 animate-box" id="award_section">
           <div className="container">
     <div className="row">
       <div className="col-lg-12">
@@ -1072,256 +952,7 @@ const LandingPage = () => {
       </div>
     </div>
           </div>
-        </section>
-
-        <footer>
-            <div className="container">
-             <div className="row">
-      <div className="col-lg-8 col-sm-12">
-        <div className="row">
-          <div className="col-lg-4 col-sm-6">
-            <div className="ft-list">
-              <img
-                alt="Trust Securities"
-                height="63"
-                src={trust_footer_logo}
-                width="117"
-              />
-              <ul className="mt-1">
-                <li>
-                  <a href="tel:+91 22 4084 5000">
-                    <img src={call_icon} />
-                    <span>
-                      +91 22 4084 5000
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@trustgroup.in">
-                    <img src={email_icon} />
-                    <span>
-                      info@trustgroup.in
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <img src={location_icon} />
-                  <span>
-                    1202, Naman Center, BKC, Bandra (East), Mumbai - 400051
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6">
-            <div className="ft-list">
-              <h3>
-                Our Offerings
-              </h3>
-              <div className="line" />
-              <ul>
-                <li>
-                  <a href="primary-offerings">
-                    Primary Offerings
-                  </a>
-                </li>
-                <li>
-                  <a href="other-offerings">
-                    Other Offerings
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6">
-            <div className="ft-list">
-              <h3>
-                About Trust
-              </h3>
-              <div className="line" />
-              <ul>
-                <li>
-                  <a href="about-us.html">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="download.html">
-                    Downloads
-                  </a>
-                </li>
-                <li>
-                  <a href="faq.html">
-                    FAQs
-                  </a>
-                </li>
-                <li>
-                  <a href="awards.html">
-                    Awards
-                  </a>
-                </li>
-                <li>
-                  <a href="contact-us.html">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="col-lg-4 col-sm-6">
-        <div className="ft-list m-0">
-          <h3>
-            Newsletter
-          </h3>
-          <div className="line" />
-          <div className="newsletter">
-            <p className="text">
-              Get latest updates and offers.
-            </p>
-            <form>
-              <div className="nws-box p-relative">
-                <input
-                  id="newsletter"
-                  name=""
-                  placeholder="Enter your email address"
-                  required
-                  title="Please fill out email id"
-                  type="email"
-                />
-                <button
-                  className="btn btn-primary"
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-          <div className="social-icon mt-1">
-            <a
-              href="https://www.linkedin.com/company/trust-group-india"
-              target="_blank"
-            >
-              <img
-                height="45"
-                src={linked_in_logo}
-                width="45"
-              />
-            </a>
-            <a
-              href="https://twitter.com/TRUSTGrp_India"
-              target="_blank"
-            >
-              <img
-                height="45"
-                src={twitter_logo}
-                width="45"
-              />
-            </a>
-            <a
-              href="https://www.facebook.com/TRUST-1805221439701191"
-              target="_blank"
-            >
-              <img
-                height="45"
-                src={facebook_logo}
-                width="45"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-             </div>
-             <div className="row">
-      <div className="col-lg-12">
-        <div className="divider" />
-      </div>
-             </div>
-             <div className="row">
-      <div className="col-lg-12">
-        <div className="disclaimer">
-          <p className="font14">
-            TRUST SECURITIES SERVICES PVT. LTD. a member of BSE. SEBI Regn. No. INZ000158031. CIN: U65929MH2016PTC287266. Regd. Office: 109/110, BALARAMA, BANDRA KURLA COMPLEX, BANDRA (EAST), MUMBAI-400051 ; Phone: +91 22 26567536 TRUST SECURITIES SERVICES PVT. LTD is a distributor of IPO’s. AMFI Registration ARMFA: ARN – 138077 Trading and investments in Equities and other securities are subject to market risk, there is no assurance or guarantee of the returns. Please read the Risk Disclosure Document and Do's & Dont's prescribed by the Exchanges carefully before investing.
-          </p>
-          <p className="mt-1">
-            In order to download rights & obligations, uniform risk disclosure document, do’s & don’t in vernacular languages please visit
-            <br />
-            <a
-              href="https://www.bseindia.com/static/investors/client_regislanguages.aspx?expandable=3"
-              target="_blank"
-            >
-              https://www.bseindia.com/static/investors/client_regislanguages.aspx?expandable=3
-            </a>
-          </p>
-          <p className="mt-1">
-            <strong>
-              Disclaimer
-            </strong>
-            <br />
-            Investments in debt securities/ municipal debt securities/ securitised debt instruments are subject to risks including delay and/ or default in payment. Read all the offer related documents carefully
-          </p>
-        </div>
-      </div>
-             </div>
-            </div>
-            <div className="copyright mt-2 bondsDTL">
-              <div className="container">
-      <div className="row">
-        <div className="col-lg-6">
-          <p className="cp-list">
-            ©{' '}
-            <span id="fullYear" />
-            {' '}All Rights Reserved.
-          </p>
-        </div>
-        <div className="col-lg-6">
-          <ul className="cp-list">
-            <li>
-              <a href="terms-of-use">
-                Terms of use
-              </a>
-            </li>
-            <li>
-              <a href="disclaimer">
-                Disclaimer
-              </a>
-            </li>
-            <li>
-              <a href="privacy-policy">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="regulatory-disclosures">
-                Regulatory Disclosures
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-              </div>
-            </div>
-        </footer>
-
-        <div className="fixed-btm">
-  <a
-    href="https://wa.me/+918839514698?text=I want to buy bond online"
-    target="_blank"
-  >
-    <img
-      alt="whatsApp"
-      src={whatsapp_icon}
-    />
-  </a>
-  <a
-    href="#"
-    id="scrollTop"
-  >
-    <img src={up_arrow_icon} />
-  </a>
-</div>
+             </section>
     </>
   )
 }
