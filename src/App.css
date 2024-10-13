@@ -66,7 +66,7 @@ body {
 
 .btn-primary {
 	background-color: #A27B1E !important;
-	border-color: #EAA41C !important;
+	/* border-color: #EAA41C !important; */
     padding: 0.75rem 1.5rem !important;
 }
   
