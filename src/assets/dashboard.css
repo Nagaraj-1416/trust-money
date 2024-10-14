@@ -342,7 +342,8 @@ color: var(--brand-color);
   margin-bottom: 0;
 }
 .r-card-overlap{
-overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   max-height: 302px;   
 }
 
@@ -542,7 +543,6 @@ padding-right: 0 !important;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: solid 0.1rem var(--brand-color);
     padding: 0.75rem 1.5rem;
     font-size: 1.2rem;
     line-height: 1;
@@ -568,18 +568,36 @@ header {
     width: 100%;
 }
 
-.ds-main-header .main-header {
+.main-header {
     padding: 0.7rem 1.2rem;
     position: relative;
     left: 0;
     right: 0;
     box-shadow: 1px 1px 3px rgb(0 0 0 / 10%);
     -moz-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.95rem;
+    background-color: var(--white);
 }
 
 .flex-wrap {
     display: flex !important;
 }
+
+.card-style {
+  position: absolute;
+  top: 100%;
+  right: 0;      
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ddd;  
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  
+  border-radius: 8px;      
+  padding: 10px;            
+  width: 200px;            
+}
+
+
+
 
 /* h3{
     font-size: small;

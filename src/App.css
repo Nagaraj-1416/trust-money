@@ -1846,7 +1846,7 @@ header{
 .main-nav li a.btn-primary{
     color: var(--white);
 }
-.main-header{    
+.landing-header{    
     transition: 0.5s all;
     background: var(--white);
     position: relative;

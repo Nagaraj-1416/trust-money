@@ -1,0 +1,142 @@
+.bonds-card{margin-bottom: 1rem}
+.flex-wrap.justify-between {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.disableClick{
+    pointer-events: none;
+}
+.pasignation li a{text-align: center;background: transparent;margin: 0}
+
+
+.pasignation {
+    display: flex;
+    justify-content: flex-end;
+}
+.pasignation li:first-child {
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-right: 0;
+}
+.pasignation li {
+    list-style: none;
+    background: #fff;
+    border: solid 1px var(--gray-5);
+}
+.pasignation li:last-child {
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-left: 0;
+}
+
+.remove_filter{cursor: pointer;}
+
+#filter_checked_items .info-tag {
+  background: var(--brand-color);
+  border: none;
+  color: #fff;
+  padding: 0.2rem 0.7rem;
+  display: inline-block;
+  margin: 0.2rem;
+}
+.remove_filter {
+    cursor: pointer;
+    font-size: .5rem;
+    margin-left: 0.3rem;
+    vertical-align: middle;
+}
+
+.text-label {
+  font-size: .85rem;
+  line-height: normal;
+}
+
+.filter-list{
+  padding: 10px 0 5px 0;
+}
+
+.filter-list li {
+    padding: 5px 20px;
+    border-bottom: solid 1px var(--gray-5);
+    margin-bottom: 0;
+   
+}
+
+.filter-list li label{
+  cursor: pointer;
+}
+
+.filter-list li:last-child{border-bottom: 0}
+.filter-list li:first-child {
+    padding-bottom: 10px;
+}
+
+.input-radio-item input{
+  margin: 0.15rem 0.3rem 0 0;
+}
+
+.fl-action{
+  border: solid 1px var(--gray-5);
+  font-size: .85rem;
+  border-radius: 1rem;
+  background: transparent;
+  padding: 3px 10px;
+}
+.fl-action:hover {
+    background: var(--gray-5);
+}
+.share-modal .social-icon a img{
+  width: 40px
+}
+#copyURL{
+  height: 38px;
+  font-size: .8rem;
+  padding: 0 14px;
+  right: 7px;
+}
+.copy-item{
+  width: 30px;
+  height: 30px;
+  background: #ffff;
+}
+.ds-close lottie-player {
+    width: 28px !important;
+    height: 28px !important;
+}
+.info:hover, .copy-item:hover, .q-mark:hover{
+  opacity: 1;
+}
+.v-align-middle{vertical-align: middle;}
+.responsive-icons{
+  width: 210px;
+}
+
+@media(max-width:767px){
+  .responsive-icons{
+    width: 150px;
+  }
+}
+@media(max-width:767px){
+  .pasignation li a {
+      width: 1.7rem;
+      height: 1.7rem;
+      line-height: 1.8rem;
+      font-size: .80rem;
+  }
+  .main-section {
+      margin-top: 45px !important;
+  }
+
+  header + .profile-section.main-section{
+      margin-top: 62px !important;
+    }
+
+}
+@media(max-width:374px){
+  .pasignation li a {
+      width: 1.5rem;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      font-size: .70rem;
+  }
+}

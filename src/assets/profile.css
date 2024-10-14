@@ -1,0 +1,79 @@
+.bonds-card{margin-bottom: 1rem}
+  .flex-wrap.justify-between {
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .card-group .bonds-card {
+      display: inline-block;
+      padding: 15px;
+      margin: 0 10px 0 0;
+      width: 300px;
+      box-shadow: none;
+      background: var(--gray-light);
+/*      border: solid 1px var(--gray-5);*/
+  }
+
+    .bonds-card.bank {
+        width: 90%;
+    }
+
+  @media(max-width:991px){
+    .card-group .bonds-card{
+      width: 90%;
+    }
+
+    .bonds-card.bank{
+      width: 95%;
+    }
+
+    .lg-mt-1{margin-top: .5rem}
+  }
+
+  @media (min-width: 576px) {
+    .card-group {
+        display: block;
+        flex-flow: row wrap;
+    }
+  }
+
+  .card-group .bonds-card:last-child{
+    margin-right: 0
+  }
+  
+  .card-group {
+      white-space: nowrap;
+      overflow: auto;
+      margin-top: 1rem;
+      padding-bottom: 0.5rem;
+  }
+
+  .card-group .bonds-card .text{
+    overflow: hidden;
+    white-space: nowrap;
+    white-space: 90%;
+    text-overflow: ellipsis;
+  }
+  .tag-right {
+    position: absolute;
+    top: 10px;
+    color: #fff;
+    right: 20px;
+    font-size: .65rem;
+    background: #af862e;
+    color: #fff;
+    padding: 0 0.2rem;
+    border-radius: 0.2rem;
+  }
+
+  .cdsl-color{
+    background: #00529c;
+  }
+  .nsdl-color{
+    background: #883C2A;
+  }
+
+  .error {
+      font-size: .8rem;
+      color: red;
+  }

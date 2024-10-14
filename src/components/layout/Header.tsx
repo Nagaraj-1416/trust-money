@@ -46,8 +46,7 @@ const Header: React.FC = () => {
         </div>
       </section>
 
-      {/* Main Header Section */}
-      <section className="main-header">
+      <section className='landing-header'>
   <div className="container">
     <div className="row">
       <div className="col-lg-12">

@@ -1,0 +1,79 @@
+.ds-sidebar {
+    position: fixed;
+    height: 92%;
+    top: 15px;
+    left: 20px;
+    border-right: 1px solid var(--gray-5);
+    z-index: 9999;
+    width: 5%;
+    /* transition: transform 450ms ease, width 450ms ease;  */
+    box-shadow: 0px 1px 3px 0px rgb(54 74 99 / 5%);
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: var(--white);
+    transition: .5s all;
+    border-radius: 0.95rem;
+  }
+  
+
+  .ds-nav-items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .ds-nav-items li {
+    margin: 10px 0;
+    list-style: none;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #000;
+    text-decoration:none;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    color: #828282;
+  }
+  
+  .nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-decoration:none;
+    background-color: #FFFAF1;
+  }
+  
+  .icon {
+    margin-right: 0;
+    transition: margin-right 0.3s ease;
+  }
+  
+  .nav-text {
+    opacity: 0;
+    transition: opacity 0.3s ease, margin-left 0.3s ease;
+    margin-left: 10px;
+    list-style: none;
+  }
+  
+  .ds-sidebar:hover .nav-text {
+    opacity: 1;
+    list-style: none;
+  }
+  
+  .ds-sidebar:hover {
+    width: 200px;
+  }
+  
+  .ds-sidebar:hover .icon {
+    margin-right: 10px;
+  }
+  
+  /* Highlight active item with background color */
+.nav-item.active {
+    background-color: #FFFAF1;
+    width: 100%;
+    color: #A27B1E;
+  }
+  

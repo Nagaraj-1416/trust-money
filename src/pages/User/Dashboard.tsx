@@ -6,122 +6,110 @@ import right_arrow_dash from '../../assets/right-arrow-dash.svg'
 import default_icon from '../../assets/default-icon.jpg'
 import buy_full_icon from '../../assets/buy-full-icon.svg'
 import info_icon from '../../assets/info-icon.svg'
-import profile_icon from '../../assets/profile.svg'
 import plus_icon_outline from '../../assets/plus-icon-outline.svg'
-import search_icon from '../../assets/search-icon.svg'; 
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import Navbar from "../../components/layout/Navbar"
 
 
 const Dashboard: React.FC = () => {
+
+    // State to control the visibility of the profile dropdown
+    const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+    // Function to toggle the dropdown visibility
+    const toggleDropdown = () => {
+      setDropdownVisible(!isDropdownVisible);
+    };
     return (
       <>
-<div className="ds-main">
+{/* <div className="ds-main">
   <div className="ds-wrap active">
-    <div className="ds-body-wrap">
-      <div className="sticky-head">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <header className="ds-main-header">
-                <section className="main-header mt-2">
-                  <div className="flex-wrap flex-center">
-                    <div
-                      className="ds-search-box"
-                      id="searchArea"
-                    >
-                      <div className="ds-main-search flex-wrap flex-center">
-                        <img
-                          className="ds-search-icon"
-                          height="17px"
-                          src={search_icon}
-                          width="17px"
-                        />
-                        <img
-                          className="ds-search-icon-mob d-none"
-                          height="17px"
-                          src={search_icon}
-                          width="17px"
-                        />
-                        <input
-                          className="ds-search"
-                          id="search_bond"
-                          name="search_bond"
-                          placeholder="Search by ISIN / Issuer / Company"
-                          type="text"
-                        />
-                        <img
-                          className="d-none ds-search-close"
-                          src="images/icons/close-icon.svg"
-                        />
-                      </div>
-                      <div
-                        className="search-mode"
-                        id="searchBox"
-                      >
-                        <ul
-                          className="search-list overflow-item"
-                          id="seachItems"
-                        >
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="ds-profile">
-                      <div
-                        className="ml-auto flex-wrap flex-center"
-                        id="dashProfileTab"
-                      >
-                        <div className="mr-1">
-                          <img src={profile_icon} />
-                        </div>
-                        <div className="ds-name">
-                          <div className="font12 sucess-text">
-                            Verified
-                          </div>
-                          <div className="flex-wrap flex-center">
-                            <span className="name-text mr-1">
-                              SARFARAZ ANSARI
-                            </span>
-                            <img
-                              height="7"
-                              src="images/dashboard/caret.svg"
-                              width="17"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="ds-search-box">
-                        <div
-                          className="search-mode"
-                          id="dashProfile"
-                        >
-                          <ul className="search-list profile-activity">
-                            <li>
-                              <a href="profile.html">
-                                <img src="images/dashboard/menu-icons/profile-line.svg" />
-                                <span>
-                                  View Profile
-                                </span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="login.html">
-                                <img src="images/dashboard/menu-icons/logout.svg" />
-                                <span>
-                                  Sign out
-                                </span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </header>
+    <div className="ds-body-wrap"> */}
+      {/* <div className="sticky-head">
+      <div className="container">
+  <div className="row">
+    <div className="col-lg-12">
+      <header className="ds-main-header">
+        <section className="main-header mt-2">
+          <div className="d-flex justify-content-between align-items-center flex-wrap">
+            <div className="ds-search-box" id="searchArea">
+              <div className="ds-main-search d-flex align-items-center">
+                <img
+                  className="ds-search-icon"
+                  height="17px"
+                  src={search_icon}
+                  width="17px"
+                />
+                <img
+                  className="ds-search-icon-mob d-none"
+                  height="17px"
+                  src={search_icon}
+                  width="17px"
+                />
+                <input
+                  className="ds-search"
+                  id="search_bond"
+                  name="search_bond"
+                  placeholder="Search by ISIN / Issuer / Company"
+                  type="text"
+                  style={{ width: '250px' }}
+                />
+                <img
+                  className="d-none ds-search-close"
+                  src="images/icons/close-icon.svg"
+                />
+              </div>
+              <div className="search-mode" id="searchBox">
+                <ul className="search-list overflow-item" id="seachItems"></ul>
+              </div>
             </div>
-          </div>
-        </div>
+
+<div className="ds-profile" style={{ cursor: 'pointer' }} onClick={toggleDropdown}>
+  <div className="ml-auto d-flex align-items-center" id="dashProfileTab">
+    <div className="mr-1">
+      <img src={profile_icon} alt="Profile" />
+    </div>
+    <div className="ds-name">
+      <div className="font12 sucess-text">Verified</div>
+      <div className="d-flex align-items-center">
+        <span className="name-text mr-1">SARFARAZ ANSARI</span>
+        <img height="7" src={caret_icon} width="17" alt="Caret" />
       </div>
-      <section className="profile-section pt-2">
+    </div>
+  </div>
+
+  {isDropdownVisible && (
+    <div className="ds-search-box card-style">
+      <div id="dashProfile">
+        <ul className="search-list profile-activity" style={{ listStyle: 'none', padding: 0 }}>
+          <li>
+            <Link to="/profile">
+              <img src={profile_line} alt="Profile" />
+              <span>View Profile</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/login">
+              <img src={log_out} alt="Logout" />
+              <span>Sign out</span>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  )}
+</div>
+
+          </div>
+        </section>
+      </header>
+    </div>
+  </div>
+</div>
+
+      </div> */}
+      <section className="profile-section pt-2" style={{marginLeft:'7%'}}>
         <div className="container">
           <div className="row flex-center">
             <div className="col-lg-6">
@@ -294,7 +282,7 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
       </section>
-      <section className="listing-cards mt-1 mb-5">
+      <section className="listing-cards mt-1 mb-5" style={{marginLeft:'7%'}} >
         <div className="container">
           <div className="row">
             <div className="col-lg-7">
@@ -1128,9 +1116,9 @@ const Dashboard: React.FC = () => {
           <span className="loader" />
         </div>
       </div> */}
-    </div>
+    {/* </div>
   </div>
-</div>
+</div> */}
       </>
     )
 }
